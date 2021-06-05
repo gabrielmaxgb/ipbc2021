@@ -71,7 +71,6 @@ function Header(props) {
   const open = Boolean(anchorEl);
 
   const handleMenu = (event) => {
-    console.log(event)
     setAnchorEl(event.currentTarget);
   };
 
@@ -98,7 +97,7 @@ function Header(props) {
             }}
           >
             <Typography variant="h6" className={classes.title}>
-              IPBC
+              IPBC Clone (Alpha)
             </Typography>
               <Box
               >
@@ -130,7 +129,7 @@ function Header(props) {
                               <MenuItem
                                 onClick={() => handleMenuClick(`/${ navItem.path }`)}
                                 style={{
-                                  textTransform: 'capitalize'
+                                  textTransform: 'capitalize',
                                 }}
                               >
                                 { navItem.label }
@@ -156,7 +155,6 @@ function Header(props) {
                     >
                       {
                           navItems.map((navItem) => {
-                            console.log(navItem)
                             return(
                               <MenuItem
                                 onClick={() => handleMenuClick(`/${ navItem.path }`)}
@@ -165,7 +163,8 @@ function Header(props) {
                                   alignItems: 'center',
                                   textTransform: 'capitalize',
                                   margin: '.2rem',
-                                  justifyContent: 'space-between'
+                                  justifyContent: 'space-between',
+                                  borderRadius: '5px',
                                 }}
                               >
                                 { navItem.label }
