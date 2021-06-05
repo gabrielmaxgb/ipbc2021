@@ -23,10 +23,11 @@ const useStyles = makeStyles(theme => ({
 function App() {
   const classes = useStyles();
   const theme = useTheme();
+  console.log(theme);
 
   return (
     <>
-      <Container fixed maxWidth="lg" className={ classes.headerContainer }>
+      <Container fixed maxWidth="lg">
         <Header />
       </Container>
       <Container fixed maxWidth="lg" className={ classes.mainContainer }>
