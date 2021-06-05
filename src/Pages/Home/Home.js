@@ -5,10 +5,25 @@ function Home() {
   return (
     <>
       <Grid container xs>
-        <Grid item container xs={12} sm={4} fluid justify="center" style={{ backgroundColor: 'green' }}>
-          1
+        <Grid item container xs={3} fluid justify="center">
+          <Box
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              backgroundColor: '#D7DE87',
+              padding: '2rem',
+              borderRadius: '10px'
+            }}
+          >
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+          </Box>
         </Grid>
-        <Grid item container xs={12} sm={8} justify="center" style={{ backgroundColor: 'pink' }}>
+        <Grid item container xs={9} justify="center" style={{ backgroundColor: 'pink' }}>
           2
         </Grid>
       </Grid>

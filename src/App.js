@@ -1,6 +1,7 @@
 import { Container, makeStyles, useMediaQuery, useTheme } from '@material-ui/core';
 import React from 'react';
 import { Route, Switch } from 'react-router';
+import Footer from './Main/Footer';
 import Header from './Main/Header';
 import Contact from './Pages/Contact/Contacts';
 import Departments from './Pages/Departments/Departments';
@@ -39,6 +40,7 @@ function App() {
           <Route path="" component={ NotFound } />
         </Switch>
       </Container>
+      <Footer />
     </>
   );
 }
